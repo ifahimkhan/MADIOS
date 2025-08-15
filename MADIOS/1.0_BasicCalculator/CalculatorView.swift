@@ -13,6 +13,8 @@ struct CalculatorView: View {
     @State private var input2: String = ""
     @State private var operation: String = "+"
     @State private var result: String = ""
+    enum Field { case input1, input2 }
+    @FocusState private var focusedField: Field?
     
     let operations = ["+", "-", "*", "/"]
     
@@ -21,10 +23,14 @@ struct CalculatorView: View {
             TextField("Enter first number", text: $input1)
                 .keyboardType(.decimalPad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .focused($focusedField, equals: .input1)
+
             
             TextField("Enter second number", text: $input2)
                 .keyboardType(.decimalPad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .focused($focusedField, equals: .input2)
+
             
             Picker("Operation", selection: $operation) {
                 ForEach(operations, id: \.self) { op in
@@ -35,6 +41,7 @@ struct CalculatorView: View {
             
             Button("Calculate") {
                 calculateResult()
+                focusedField = nil
             }
             .frame(maxWidth: .infinity)
             .padding()
@@ -54,6 +61,7 @@ struct CalculatorView: View {
             result = "Invalid input"
             return
         }
+        
         switch operation {
         case "+":
             result = String(num1 + num2)
