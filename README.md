@@ -59,6 +59,13 @@ This project is designed as a hands-on introduction to iOS app development using
   - Screenshot(s) in `Labs/Lab01_BasicCalculator/screenshots/` showcase input, operation, and result display.
   - <img src="basic_calculator.png" alt="Description of Image 1" width="300"/>
 
+- **Lab 2: Add basic navigation and multiple methods for passing data between screens**
+  - Implements screen navigation using NavigationLink
+  - Demonstrates passing data via initializer, binding, and observable objects
+  - Screenshot(s) in `Labs/Lab02_PassingData/screenshots/` showcase input, operation, and result display.
+  - <img src="passingData.png" alt="Description of Image 1" width="300"/>
+  - <img src="passingData1.png" alt="Description of Image 1" width="300"/>
+
 
 *...More labs will be added as the course progresses!*
 
