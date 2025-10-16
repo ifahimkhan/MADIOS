@@ -14,6 +14,12 @@ struct ContentView: View {
                 NavigationLink(destination: CalculatorView()){
                     Text("1. Basic Calculator")
                 }
+                NavigationLink(destination: PassingDataView()){
+                    Text("2. Passing Data between Views")
+                }
+                NavigationLink(destination: MainListView()){
+                    Text("3. Basic ListView Implementation")
+                }
             }.navigationTitle("MAD LAB IOS")
         }
     }

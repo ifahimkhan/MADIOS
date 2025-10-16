@@ -1,3 +1,11 @@
+//
+//  CustomModelListView.swift
+//  MADIOS
+//
+//  Created by apple on 10/14/25.
+//
+
+
 import SwiftUI
 
 struct CustomModelListView: View {
@@ -18,7 +26,10 @@ struct CustomModelListView: View {
                         .foregroundColor(.gray)
                 }
             }
-            .navigationTitle("Tasks")
+            .navigationTitle("Custom Model")
         }
     }
+}
+#Preview {
+    CustomModelListView()
 }
