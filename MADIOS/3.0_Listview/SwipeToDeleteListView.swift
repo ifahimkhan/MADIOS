@@ -28,6 +28,7 @@ struct SwipeToDeleteListView : View{
                 .onDelete(perform: deleteItems)
                 
             }
+            .navigationTitle("Tasks")
         }
     }
     

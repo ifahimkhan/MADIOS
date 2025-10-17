@@ -15,8 +15,12 @@ struct MenuItem: Identifiable {
 struct MainListView: View {
     let menuItems = [
             MenuItem(title: "List with Custom Model", destination: AnyView(CustomModelListView())),
-            MenuItem(title: "Profile", destination: AnyView(CustomModelListView())),
-            MenuItem(title: "Settings", destination: AnyView(CustomModelListView()))
+            
+            MenuItem(title: "Custom Row ListView", destination: AnyView(CustomRow())),
+            
+            MenuItem(title: "Swipe to delete ListView", destination: AnyView(SwipeToDeleteListView())),
+            
+            MenuItem(title: "Search ListView", destination: AnyView(SearchListView()))
         ]
      
     var body: some View {
@@ -26,7 +30,6 @@ struct MainListView: View {
                     Text(item.title)
                 }
             }
-            .navigationTitle("List implementation")
         }
     }
 }
