@@ -71,7 +71,7 @@ By exploring this repository, you'll learn:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/MADIOS.git
+git clone https://github.com/ifahimkhan/MADIOS.git
 ```
 
 2. Open the project in Xcode:
