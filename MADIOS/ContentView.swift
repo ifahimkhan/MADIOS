@@ -20,6 +20,9 @@ struct ContentView: View {
                 NavigationLink(destination: MainListView()){
                     Text("3. Basic ListView Implementation")
                 }
+                NavigationLink(destination: WebViewExample()){
+                    Text("4. WebView with Navigation")
+                }
             }.navigationTitle("MAD LAB IOS")
         }
     }
