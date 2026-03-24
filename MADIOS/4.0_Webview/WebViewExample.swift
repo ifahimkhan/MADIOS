@@ -82,7 +82,7 @@ struct WebViewExample: View {
         .onAppear {
             viewModel.loadURL(urlString)
         }
-        .onChange(of: viewModel.currentURL) { _, newURL in
+        .onChange(of: viewModel.currentURL) { newURL in
             if let url = newURL {
                 urlString = url.absoluteString
             }
